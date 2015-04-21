@@ -705,8 +705,24 @@ $foo->bar(
 );
 ```
 
+10. Comments and Documentation
+------------------------------
 
-10. Conclusion
+Comments should begin with two backslashes, `//`, and end with a single period.
+If a comment drifts too far past the line of code that it documents, wrap the comment
+to the next line using an additional `//`.
+
+```php
+<?php
+
+// Use the AuthService to login the user with their
+// email and password.
+$response = $authService->Login($email, $password);
+```
+
+Documentation blocks for class methods or functions should use proper [PHPDoc](http://en.wikipedia.org/wiki/PHPDoc) notation.
+
+11. Conclusion
 --------------
 
 There are many elements of style and practice intentionally omitted by this
@@ -718,11 +734,9 @@ guide. These include but are not limited to:
 
 - Operators and assignment
 
-- Comments and documentation blocks
-
 - Class name prefixes and suffixes
 
 - Best practices
 
-Future recommendations MAY revise and extend this guide to address those or
+Future recommendations will revise and extend this guide to address those or
 other elements of style and practice.
