@@ -720,6 +720,8 @@ to the next line using an additional `//`.
 $response = $authService->Login($email, $password);
 ```
 
+Comments should never be used to document closing braces.
+
 Documentation blocks for class methods or functions should use proper [PHPDoc](http://en.wikipedia.org/wiki/PHPDoc) notation.
 
 11. Conclusion
