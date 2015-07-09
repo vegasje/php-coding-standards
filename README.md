@@ -724,7 +724,37 @@ Comments should never be used to document closing braces.
 
 Documentation blocks for class methods or functions should use proper [PHPDoc](http://en.wikipedia.org/wiki/PHPDoc) notation.
 
-11. Conclusion
+11. SQL Strings
+------------------------------
+
+SQL strings should always use double-quotes, and should always have a line break before and after the SQL string. The SQL should be formatted per the example below:
+
+```sql
+  SELECT
+    fi.first,
+    s.second,
+    t.third_thing AS third,
+    fo.COUNT(fourth) AS fourth_count
+  FROM
+    first AS fi
+    JOIN second AS s ON s.first_id = fi.id
+    JOIN third AS t ON t.second_id = s.id
+    JOIN fourth AS fo ON fo.third_id = t.id
+  WHERE
+    fi.param = 1
+    AND s.param = 3
+    AND (
+      f.param1 = 2
+      OR f.param2 = 5
+    )
+  ORDER BY
+    fo.ordered DESC,
+    fi.ordered
+```
+
+Please note the capitalization of SQL reserved words, the use of AS, the indentation, and the line breaks.
+
+12. Conclusion
 --------------
 
 There are many elements of style and practice intentionally omitted by this
