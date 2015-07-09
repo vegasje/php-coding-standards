@@ -734,7 +734,7 @@ SQL strings should always use double-quotes, and should always have a line break
     fi.first,
     s.second,
     t.third_thing AS third,
-    fo.COUNT(fourth) AS fourth_count
+    COUNT(fo.fourth) AS fourth_count
   FROM
     first AS fi
     JOIN second AS s ON s.first_id = fi.id
