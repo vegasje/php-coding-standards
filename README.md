@@ -583,6 +583,16 @@ foreach ($iterable as $key=>$value) {
 }
 ```
 
+`foreach` statements that use `&` to grab the value's reference should always
+use `unset` following the loop to remove the allocation.
+
+```php
+<?php
+foreach ($iterable as $key=>&$value) {
+    // foreach body
+} unset($value);
+```
+
 ### 8.6. `try`, `catch`
 
 A `try catch` block looks like the following. Note the placement of
