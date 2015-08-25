@@ -244,6 +244,19 @@ The PHP constants `true`, `false`, and `null` MUST be in lower case.
 
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
+### 5.4. String Interpolation
+
+PHP strings should be interpolated using brace-style variables directly inside the double-quoted string.
+
+Example:
+
+```php
+<?php
+
+$name = 'John Smith';
+$greeting = "Hello, my name is {$name}";
+```
+
 
 
 6. Namespace and Use Declarations
