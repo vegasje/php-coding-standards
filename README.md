@@ -516,6 +516,8 @@ if ($expr1) {
 The keyword `elseif` SHOULD be used instead of `else if` so that all control
 keywords look like single words.
 
+Braces SHOULD always be used, even when the code inside the condition occupies a single line.
+
 
 ### 8.2. `switch`, `case`
 
