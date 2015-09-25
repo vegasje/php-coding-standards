@@ -194,12 +194,7 @@ class Foo
 
 ### 4.2. Properties
 
-This guide intentionally avoids any recommendation regarding the use of
-`$StudlyCaps`, `$camelCase`, or `$under_score` property names.
-
-Whatever naming convention is used SHOULD be applied consistently within a
-reasonable scope. That scope may be vendor-level, package-level, class-level,
-or method-level.
+Properties should be declared in `$camelCase`.
 
 ### 4.3. Methods
 
