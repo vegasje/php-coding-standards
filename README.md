@@ -421,6 +421,10 @@ class ClassName
 }
 ```
 
+Default values for arguments **should be sane**.
+
+If the parameter is a boolean, and in most cases the value would be `false`, then a sane default for that value would be `false`.  If the parameter is only needed in some cases, such as when optionally limiting a search to include a specific date range, then sane defaults for those range parameters would be `null`.  It would not be sane to default those range arguments to `false` or `""` (empty string), since those values do not make sense within the context of a date range.
+
 ### 7.5. `abstract`, `final`, and `static`
 
 When present, the `abstract` and `final` declarations MUST precede the
